@@ -19,8 +19,6 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 #include "leds.h"
 #include "switches.h"
 #include "utils.h"
-#include "wamControl.h"
-#include "wamDisplay.h"
 #include "xparameters.h"
 
 #define MILESTONE_1 1
@@ -31,11 +29,14 @@ For questions, contact Brad Hutchings or Jeff Goeders, https://ece.byu.edu/
 ////////////////////////////////////////////////////////////////////////////////
 // #define RUN_PROGRAM MILESTONE_1
 // #define RUN_PROGRAM MILESTONE_2
+// #define RUN_PROGRAM MILESTONE_3
 
 // If nothing is uncommented above, run milestone 2
 #ifndef RUN_PROGRAM
-#define RUN_PROGRAM MILESTONE_2
+#define RUN_PROGRAM MILESTONE_3
 #endif
+
+// CHANGE EVERYTHING BELOW
 
 #define MILESTONE_1_MSG "Running Milestone 1, wamDisplay_runMilestone1_test()\n"
 #define MILESTONE_2_MSG "Running Milestone 2, Whack-a-mole game\n"
