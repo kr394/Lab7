@@ -17,7 +17,7 @@
 #define L_INV_COLOR    DISPLAY_BLUE
 #define Z_COLOR        DISPLAY_RED
 #define Z_INV_COLOR    DISPLAY_GREEN
-#define EDGE_COLOR     DIDPLAY_GRAY
+#define EDGE_COLOR     DISPLAY_GRAY
 
 #define SHAPE_SIZE   4
 
