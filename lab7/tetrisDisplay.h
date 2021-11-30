@@ -7,10 +7,8 @@
 
 #define DRAW_SIZE   5
 
-#define NUM_COLS   10
-#define NUM_ROWS   20
-#define BORDER_WIDTH    12
-#define BORDER_HEIGHT   22
+#define NUM_COLS   12
+#define NUM_ROWS   22
 
 #define LINE_COLOR     DISPLAY_CYAN
 #define T_COLOR        DISPLAY_MAGENTA
@@ -23,31 +21,31 @@
 
 #define SHAPE_SIZE   4
 
-typedef struct {
+typedef struct box{
   uint16_t color;
   uint8_t x_pos;
   uint8_t y_pos;
   bool filled;
-} box;
+} Box;
 
-typedef struct {
+typedef struct shape{
   uint16_t color;
-  box centerBox;
-  box* boxes;
-} shape;
+  Box centerBox;
+  Box* boxes;
+} Shape;
 
 void tetrisDisplay_init();
 
-void tetrisDisplay_makeShape(shape* activeShape);
+void tetrisDisplay_makeShape(Shape* activeShape);
 
-void tetrisDisplay_drawShape(shape* activeShape);
+void tetrisDisplay_drawShape(Shape* activeShape);
 
-void tetrisDisplay_moveShape(shape* activeShape);
+void tetrisDisplay_moveShape(Shape* activeShape);
 
-void tetrisDisplay_rotateShape(shape* activeShape);
+void tetrisDisplay_rotateShape(Shape* activeShape);
 
-void tetrisDisplay_drawBox(box* activeBox);
+void tetrisDisplay_drawBox(Box* activeBox);
 
-void tetrisDisplay_findCollision(shape* activeShape);
+void tetrisDisplay_findCollision(Shape* activeShape);
 
 #endif /* TETRISDISPLAY_H */
