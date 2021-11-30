@@ -38,7 +38,7 @@ typedef struct {
 
 void tetrisDisplay_init();
 
-void tetrisDisplay_getNextShape(shape* nextShape);
+void tetrisDisplay_makeShape(shape* activeShape);
 
 void tetrisDisplay_drawShape(shape* activeShape);
 
