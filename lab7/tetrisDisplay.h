@@ -5,7 +5,7 @@
 #include <stdbool.h>
 #include "display.h"
 
-#define DRAW_SIZE   5
+#define DRAW_SIZE   11
 
 #define NUM_COLS   12
 #define NUM_ROWS   22
